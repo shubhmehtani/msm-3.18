@@ -214,6 +214,7 @@ alternative_else_nop_endif
 
 	__uaccess_ttbr0_enable x0, x1
 
+
 	.if	\el == 0
 	/*
 	 * Enable errata workarounds only if returning to user. The only
