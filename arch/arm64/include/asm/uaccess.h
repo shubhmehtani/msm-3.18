@@ -137,6 +137,7 @@ static inline void __uaccess_ttbr0_disable(void)
 {
 	unsigned long flags, ttbr;
 
+
 	local_irq_save(flags);
 	ttbr = read_sysreg(ttbr1_el1);
 	ttbr &= ~TTBR_ASID_MASK;
